@@ -75,6 +75,9 @@ CLOSURES
 	
 	#times = multiplier_outer(3)
 	#times(5) ---> 15
+				    
+BINARY SEARCH TREE
+				    
 				
     
     
