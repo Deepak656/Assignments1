@@ -8,9 +8,10 @@ if ( n == 1 ) {
 }
 else if (n > 1) {
   for (let i = 2; i < number; i++ ) {
-    if (number%i == 0) :
+    if (number%i == 0) {
       console.log("Not a prime number");
       break;
+    }
   }
 }
 else {
