@@ -77,6 +77,16 @@ CLOSURES
 	#times(5) ---> 15
 				    
 BINARY SEARCH TREE
+# A binary search tree is a binary tree in which left subtree is smaller than the node's value, and right subtree is greater than the node's value. And same is true for each subtree.			
+# let's understand binary tree ,using a simple search operation
+				    
+def search(root, key) :
+  if root is None or root.val == key :
+	return root
+  if root.val < key:
+ 	return search(root.right, key)
+  return search(root.left, key)
+				    
 				    
 				
     
