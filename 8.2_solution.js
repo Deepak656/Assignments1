@@ -1,7 +1,7 @@
 // Given a number n find out if it is prime number or not
 // Use javascript to find out difference between next prime number after X and X
 
-PRIME NUMBER OR NOT
+//PRIME NUMBER OR NOT and NEXT PRIME NUMBER
 
 function isprime(n) {
     if (n > 1) {
@@ -37,5 +37,6 @@ function nextprime(n){
     }
 };
 
+console.log(isprime(7));
 console.log(nextprime(7));
 
