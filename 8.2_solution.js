@@ -3,20 +3,39 @@
 
 PRIME NUMBER OR NOT
 
-n = 17
-if ( n == 1 ) {
-  console.log("Neither prime nor composite");
-}
-else if (n > 1) {
-  for (let i = 2; i < n; i++ ) {
-    if (n%i == 0) {
-      console.log("Not a prime number");
-      break;
+function isprime(n) {
+    if (n > 1) {
+      for (let i = 2; i < n; i++ ) {
+        if (n%i == 0) {
+          return false;
+        }
+      }
+      stop = true;
+      return true;
     }
-  }
-  console.log("Prime number");
-}
-else {
-  console.log("Not a prime number");
-}
+    else {
+      return false;
+    }
+};
+
+function nextprime(n){
+    if (isprime(n) == false){
+        return 'not a prime';
+    } 
+    else {
+        let stop = true;
+        let i = n+1;
+        let ans = 0;
+        while (stop) {
+            if (isprime(i) == true) {
+                ans = i;
+                stop = false;
+            }
+            i +=1;
+        }
+        return ans;
+    }
+};
+
+console.log(nextprime(7));
 
